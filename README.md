@@ -29,7 +29,7 @@ This project consists of two applications: a **Backend** in Node.js and a **Fron
    npm run dev
    ```
 
-### 2. Fribtebd (Next.js)
+### 2. Frontend (Next.js)
 
 1. Open a new terminal on the root directory and navigate to the frontend directory
 
