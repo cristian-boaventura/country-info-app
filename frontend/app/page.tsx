@@ -1,12 +1,7 @@
 import CountryList from '@/components/CountryList';
+import { fetchCountries } from '@/utils/dataFetching';
 
 export default async function Home() {
-  const fetchCountries = async () => {
-    const response = await fetch('http://localhost:3000/countries');
-    const data = await response.json();
-    return data;
-  };
-
   const countries = await fetchCountries();
 
   return (
