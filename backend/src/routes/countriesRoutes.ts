@@ -1,7 +1,7 @@
 import express from 'express';
 import {
   getAllCountries,
-  getCountryInfo,
+  getCountryInfo
 } from '../controllers/countriesController';
 
 const router = express.Router();

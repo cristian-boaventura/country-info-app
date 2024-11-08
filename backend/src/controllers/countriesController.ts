@@ -10,6 +10,7 @@ export const getAllCountries = async (req: Request, res: Response) => {
     );
     res.json(response.data);
   } catch (error) {
+    console.log(error);
     res.status(500).json({ message: 'Server error' });
   }
 };
@@ -50,9 +51,10 @@ export const getCountryInfo = async (req: Request, res: Response) => {
     res.json({
       borderCountries: borderCountries.data.borders,
       populationData: populationData.data.data.populationCounts,
-      flagUrl: flagUrl.data.data.flag,
+      flagUrl: flagUrl.data.data.flag
     });
   } catch (error) {
+    console.log(error);
     res.status(500).json({ message: 'Server error' });
   }
 };
